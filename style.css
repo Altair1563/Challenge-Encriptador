@@ -1,0 +1,330 @@
+body{
+    background-color: #e5e5e5;
+    margin: 0px;
+    padding: 0px;
+}
+    
+header{
+    width: 100%;
+    height: 60px;
+    
+}
+    
+header img{
+    width: 20px;
+    position: relative;
+    margin: 20px 20px;
+}
+    
+main{
+    width: 95%;
+    height: 630px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+    
+.seccion1{
+    width: 60%;
+}
+    
+.cuadroTexto{
+    height: 80%;
+    width: 115%;
+    resize: none;
+    text-align: center;
+    display: block;
+    margin: 0px 45px;
+    font-size: 25px;
+    box-sizing: border-box;
+    border: 3px solid #0A3871;
+    border-radius: 10px;
+}
+    
+.botones{
+    position: relative;
+    left: 100px;
+    text-align: center;
+    margin-top: 20px;   
+}
+
+    
+.encriptar, .desencriptar{
+    width: 40%;
+    height: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    border: 4px solid #0A3871;
+    border-radius: 10px;
+    font-weight: bold;
+}
+    
+.encriptar{
+    background-color: #0A3871;
+    color: white;
+    font-size: 100%;
+    margin-right: 40px;
+}
+
+.encriptar:active {
+    background-color: #849ab6;
+    border: 4px solid #1d7cf1;
+
+}
+
+    
+.desencriptar {
+    background-color:  #D8DFE8;
+    color: #0A3871;
+    font-size: 100%;
+}
+
+.desencriptar:active{
+    background-color: #849ab6;
+    border: 4px solid #1d7cf1;
+}
+
+.Simbolo{
+    position: relative;
+    top: 18px;
+    left: 60px;
+
+}
+
+.info{
+    margin: 0 80px;
+    font-size: 15px;
+    color: #495057;
+}
+    
+.seccion2{
+    position: relative;
+    left: 30px;
+    width: 25%;
+    height: 95%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: white;
+}
+    
+    
+.cajaMuñeco{
+    width: 100%;
+    height: 60%; 
+    padding-top: 20px;  
+    text-align: center; 
+    vertical-align: middle;
+    
+
+}
+
+.Muñeco{
+    width: 100%;
+    padding-top: 40px;
+    top: 40px;
+     
+
+}
+
+.resultado{
+    width: 95%;
+    height: 100%;
+    position: relative;
+    resize: none;
+    left: 5px;
+    top: 25px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.caja1{
+    opacity: 0;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+}
+
+.cajaMensajes{
+    height: 25%;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.nMensaje{
+    opacity: 1;
+    font-size: 25px;
+    font-weight: bold;  
+}
+    
+.subMensaje{  
+    opacity: 1;
+    font-size: 20px;
+         
+}
+
+.teclaCopiar{
+    opacity: 0;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #0A3871;
+    color: white;
+    border: 3px solid #0A3871;
+    border-radius: 15px;
+    
+}
+
+.teclaCopiar:active{
+    background-color: #849ab6;
+    border: 4px solid #1d7cf1;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-between; 
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+}
+
+.copyright{
+    padding-top: 20px;
+}
+
+
+    @media screen and (min-width: 425px) and (max-width:768px)  {
+
+    .main{
+        width: 85%;
+        height: 565px;
+    }
+
+    .cuadroTexto{
+        height: 75%;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .Simbolo{
+        top: 17px;
+        left: 10px;
+    }
+
+    .info{
+        margin: 0px 30px;
+    }
+
+    .botones{
+        left: 0px;
+    }
+
+    .desencriptar{
+        padding: 10px 30px;
+    }
+
+    .seccion2{
+        width: 35%;
+        left: 0px;
+    }
+
+    .resultado{
+        left: 5px;
+    }
+    }
+
+    @media screen and (min-width: 375px) and (max-width:425px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;   
+    }
+
+    .seccion1{
+        width: 100%;
+    }
+
+    .cuadroTexto{
+        width: 95%;
+        height: 250px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .encriptar, .desencriptar{
+        padding: 0px 30px;
+    }
+
+    .seccion2{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        height: 200px;
+        margin-top: 10px;
+        margin: 10px 10px;
+    }
+
+    .Muñeco{
+        padding-top: 0px;
+    }
+
+    .cajaMensajes{
+        padding-top: 40px;
+    }
+
+    .caja1{
+        height: 85%;
+    }
+
+    .resultado{
+        position: relative;
+        left: 5px;
+        top: 20px;
+    }
+
+    .teclaCopiar{
+    position:relative;
+    }
+    
+    @media screen and (min-width: 320px) and (max-width:375px) {
+
+        .cuadroTexto{
+            position: relative;
+            width: 100%;
+            right: 25px;
+        }
+
+        .Simbolo{
+            position: relative;
+            left: 20px;
+        }
+
+        .info{
+            margin: 0px 40px;
+        }
+
+        .botones{
+            position: relative;
+            left: 25px;
+            margin-top: 10px
+        }
+
+        .seccion2{
+            width: 100%;
+            left: 10px;
+            height: 200px;
+            margin-top: 10px;
+        }
+    }
+}

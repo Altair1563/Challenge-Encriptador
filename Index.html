@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script1.js"></script>
+    <title>Encriptador</title>
+
+</head>
+
+    <body>
+        <header>
+            <img src="Imagenes/Vector.png" alt="">
+
+        </header>
+
+        <main>
+            <section class="seccion1">
+                <textarea class="cuadroTexto" placeholder="Escribe tu texto aqui" type="text" id="encriptado" cols="100" rows="40"></textarea>
+
+                <img class="Simbolo" src="Imagenes/Simbolo.png" alt="Simbolo">
+                <p class="info">Solo letras minusculas y sin acentos</p>
+
+                <div class="botones">
+                    <button type="button" id="teclaEncriptar" class="encriptar">Encriptar</button>
+                    <button type="button" id="teclaDesencriptar" class="desencriptar">Desencriptar</button>
+
+                </div>
+  
+            </section>
+
+            <section class="seccion2">
+
+                <div class="caja1" id="caja1">
+                    <textarea class="resultado" id="desencriptado" cols="30" rows="10"></textarea>
+                    
+                    
+
+                </div>
+
+                <div class="cajaMuñeco">
+                    <img class="Muñeco" src="Imagenes/Muñeco.png" alt="">
+                    
+
+                </div>
+
+                <div class="cajaMensajes" id="cajaMensajes">
+                    <h2 class="nMensaje" id="nMensaje">Ningun mensaje fue encontrado</h2>
+                    <p class="subMensaje" id="subMensaje">Ingrese el texto que desea encriptar o desencriptar</p>
+                    <button class="teclaCopiar" type="button" id="teclaCopiar">Copiar</button>
+                
+
+                </div>
+
+        
+            </section>
+    
+        </main>
+
+        <footer>
+            <p class="copyright">© Copyright Elias Anatijczuk - 2023</p>
+
+        </footer>
+
+    </body>
+    
+    <script type="text/javascript"> 
+    
+        var boton = document.querySelector("#teclaEncriptar");
+        boton.onclick = encriptar;
+     
+
+        var boton2 = document.querySelector("#teclaDesencriptar");
+        boton2.onclick = desencriptar;
+
+        var boton3 = document.querySelector("#teclaCopiar");
+        boton3.onclick = copiar;
+
+    </script>
+</html>
+
